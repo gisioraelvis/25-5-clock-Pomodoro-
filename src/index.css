@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  background-color: #0a468a;
+  padding: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+}
+
+header h1 {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75vh;
+}
+
+.time-wrapper {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.time-wrapper h2 {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.time-wrapper h3 {
+  text-align: center;
+  font-size: 7rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.controls-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.controls-wrapper button {
+  font-size: 3rem;
+  display: block;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+
+.timeset-wrapper {
+  margin: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.timeset-wrapper .control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.timeset-wrapper .control h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.timeset-wrapper .control h3 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.timeset-wrapper .control button {
+  border: none;
+  background-color: transparent;
+  color: #33c273;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+button :active,
+button:focus{
+  outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    width: 100%;
+  }
+}
